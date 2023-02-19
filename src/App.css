@@ -1,0 +1,16 @@
+body {
+  background-color: #8e0118!important;
+  padding: 50px;
+}
+
+.form-layout {
+  width: 1000px;
+}
+
+.btn-submit {
+  background-color: #bc4f5a!important;
+}
+
+.img-thankyou {
+  width: 100%;
+}
