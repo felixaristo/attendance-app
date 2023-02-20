@@ -42,16 +42,15 @@ export const Form = () => {
       )
       .then((res) => {
         setCode(res.data.data);
-        console.log(res.data);
       });
   }, []);
 
   const submitAttendance = () => {
     if (
-      !form.fullname === "" &&
-      !form.email === "" &&
-      !form.telp === "" &&
-      !form.unit === ""
+      !form.fullname == "" &&
+      !form.email == "" &&
+      !form.telp == "" &&
+      !form.unit == ""
     ) {
       axios
         .post(
@@ -68,7 +67,7 @@ export const Form = () => {
           }
         )
         .then((res) => {
-          console.log(res.data);
+          console.log(res.data.data);
           navigate("/thankyou");
         })
         .catch((err) => {
